@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/values-land/integers.xml -->
+    <eat-comment />
+
+    <integer name="grid_column_count">3</integer>
+
+</resources>

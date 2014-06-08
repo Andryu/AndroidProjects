@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="1.0.5" >
+        <source path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/build/exploded-aar/com.etsy.android.grid/library/1.0.5/res" >
+            <file
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/build/exploded-aar/com.etsy.android.grid/library/1.0.5/res/values/values.xml"
+                qualifiers="" >
+                <declare-styleable name="StaggeredGridView" >
+                    <attr
+                        name="column_count"
+                        format="integer" />
+                    <attr
+                        name="column_count_portrait"
+                        format="integer" />
+                    <attr
+                        name="column_count_landscape"
+                        format="integer" />
+                    <attr
+                        name="item_margin"
+                        format="dimension" />
+                    <attr
+                        name="grid_paddingLeft"
+                        format="dimension" />
+                    <attr
+                        name="grid_paddingRight"
+                        format="dimension" />
+                    <attr
+                        name="grid_paddingTop"
+                        format="dimension" />
+                    <attr
+                        name="grid_paddingBottom"
+                        format="dimension" />
+                </declare-styleable>
+            </file>
+        </source>
+    </dataSet>
+    <dataSet config="main" >
+        <source path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res" >
+            <file
+                name="list_item_selector"
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/drawable/list_item_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="activity_list_view"
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/layout/activity_list_view.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_main"
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/layout/activity_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_sgv"
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/layout/activity_sgv.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_sgv_empy_view"
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/layout/activity_sgv_empy_view.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="list_item_header_footer"
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/layout/list_item_header_footer.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="list_item_sample"
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/layout/list_item_sample.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_sgv_empty_view"
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/menu/activity_sgv_empty_view.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="menu_sgv_dynamic"
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/menu/menu_sgv_dynamic.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/values/colors.xml"
+                qualifiers="" >
+                <color name="grey" >#ffd3d3d3
+                </color>
+                <color name="blue" >#ff82e0ff
+                </color>
+                <color name="green" >#ff8dd304
+                </color>
+                <color name="list_item_pressed" >#1A000000
+                </color>
+                <color name="red" >#fff10800
+                </color>
+                <color name="orange" >#ffffdc7e
+                </color>
+                <color name="yellow" >#fffffbae
+                </color>
+            </file>
+            <file
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/values/integers.xml"
+                qualifiers="" >
+                <integer name="grid_column_count" >
+2
+                </integer>
+            </file>
+            <file
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="app_name" >AndroidStaggeredGridSample
+                </string>
+            </file>
+            <file
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/values/styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Light" >
+
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                </style>
+            </file>
+            <file
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/values-land/integers.xml"
+                qualifiers="land" >
+                <integer name="grid_column_count" >
+3
+                </integer>
+            </file>
+            <file
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/values-v11/styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/values-v14/styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- API 14 theme customizations can go here. -->
+                </style>
+            </file>
+        </source>
+        <source path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/build/res/rs/debug" />
+        <source path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/build/res/generated/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/debug/res" />
+    </dataSet>
+
+</merger>

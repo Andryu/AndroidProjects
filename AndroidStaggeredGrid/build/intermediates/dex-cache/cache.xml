@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/build/intermediates/pre-dexed/debug/volley-688d200de7c3b64d7d44e3f6e0dcc71e0c178ea9.jar"
+        jar="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/libs/volley.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6dcde205d2cbd5880309ec14b570d3cee6d5fc27"/>
+    <item
+        dex="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/build/intermediates/pre-dexed/debug/support-v4-19.0.1-13a08243bf3e42e73dcab1287924702c8261468f.jar"
+        jar="/Applications/AndroidDevelopper/sdk/extras/android/m2repository/com/android/support/support-v4/19.0.1/support-v4-19.0.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="587da9a481ffd341d2fa091704489b89845ddacd"/>
+    <item
+        dex="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/build/intermediates/pre-dexed/debug/classes-f312ef9770d5d714a9123ceea54b9370a327e42f.jar"
+        jar="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/build/intermediates/exploded-aar/com.etsy.android.grid/library/1.0.3/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="78eabda426c4ae86d83b0585b2de3016f83440f8"/>
+
+</pre-dex-items>

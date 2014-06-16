@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="1.0.3" >
+        <source path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/build/intermediates/exploded-aar/com.etsy.android.grid/library/1.0.3/assets" />
+    </dataSet>
+    <dataSet config="main" >
+        <source path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/debug/assets" />
+    </dataSet>
+
+</merger>

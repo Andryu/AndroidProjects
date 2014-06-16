@@ -65,9 +65,15 @@ public class StaggeredGridActivity extends Activity implements AbsListView.OnScr
         mGridView.setOnScrollListener(this);
         mGridView.setOnItemClickListener(this);
         // TODO
-        //RequestVolley requestVolley = new RequestVolley(this);
-        //String BASE_URL = "http://10.211.55.13:5000/";
-        //requestVolley.requestJsonObject(BASE_URL + "articles/index?idx=2");
+        Log.i("First", "Initializzze");
+        RequestVolley requestVolley = new RequestVolley(this);
+        //String BASE_URL = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=17af704bea88cb57230211158865a448&tag=blue&text=sky&format=json&nojsoncallback=1";
+        String BASE_URL = "https://api.flickr.com/services/rest/?method=flickr.photos.search";
+        String api_key = "APIキー"; // TODO
+        String keyword = "blue";
+        String text = "sky";
+        //requestVolley.requestJsonObject(BASE_URL + "&api_key=" + api_key + "&tag=" + keyword + "&text=" + text + "format=json&nojsoncallback=1");
+        requestVolley.requestJsonObject(BASE_URL + "&api_key=" + api_key + "&tag=" + keyword + "&text=" + text + "&format=json&nojsoncallback=1");
     }
 
     @Override
@@ -91,7 +97,7 @@ public class StaggeredGridActivity extends Activity implements AbsListView.OnScr
 		}
 		return true;
 	}
-	
+
     @Override
     protected void onSaveInstanceState(final Bundle outState) {
         super.onSaveInstanceState(outState);

@@ -26,6 +26,10 @@
         <activity android:name="com.etsy.android.sample.StaggeredGridActivity" />
         <activity android:name="com.etsy.android.sample.StaggeredGridEmptyViewActivity" />
         <activity android:name="com.etsy.android.sample.ListViewActivity" />
+        <activity
+            android:name="com.etsy.android.sample.WallGridActivity"
+            android:label="@string/title_activity_wall_grid" >
+        </activity>
     </application>
 
 </manifest>

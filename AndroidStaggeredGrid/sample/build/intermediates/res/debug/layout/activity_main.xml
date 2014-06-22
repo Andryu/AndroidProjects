@@ -30,5 +30,13 @@
         android:layout_margin="16dp"
         android:text="List View" />
 
+    <Button
+        android:id="@+id/btn_wallview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:text="My Wall View" />
 </LinearLayout>
 <!-- From: file:/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/layout/activity_main.xml -->

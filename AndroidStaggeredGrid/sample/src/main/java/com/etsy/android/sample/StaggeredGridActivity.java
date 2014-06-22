@@ -64,16 +64,16 @@ public class StaggeredGridActivity extends Activity implements AbsListView.OnScr
         mGridView.setAdapter(mAdapter);
         mGridView.setOnScrollListener(this);
         mGridView.setOnItemClickListener(this);
-        // TODO
-        Log.i("First", "Initializzze");
-        RequestVolley requestVolley = new RequestVolley(this);
-        //String BASE_URL = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=17af704bea88cb57230211158865a448&tag=blue&text=sky&format=json&nojsoncallback=1";
-        String BASE_URL = "https://api.flickr.com/services/rest/?method=flickr.photos.search";
-        String api_key = "APIキー"; // TODO
-        String keyword = "blue";
-        String text = "sky";
-        //requestVolley.requestJsonObject(BASE_URL + "&api_key=" + api_key + "&tag=" + keyword + "&text=" + text + "format=json&nojsoncallback=1");
-        requestVolley.requestJsonObject(BASE_URL + "&api_key=" + api_key + "&tag=" + keyword + "&text=" + text + "&format=json&nojsoncallback=1");
+
+        /*
+        // 画像取得できるURLのリスト
+        ArrayList<String> urlList = new ArrayList<String>();
+        ListView listView = (ListView) findViewById(R.id.listView);
+
+        // ImageLoaderをもっているアダプタを設定
+        mQueue = Volley.newRequestQueue(this);
+        ImageLoaderAdapter adapter = new ImageLoaderAdapter(this, urlList, mQueue);
+        */
     }
 
     @Override

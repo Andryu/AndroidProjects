@@ -20,4 +20,5 @@
         android:layout_gravity="top|right"
         android:text="Go" />
 
-</FrameLayout><!-- From: file:/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/layout/list_item_sample.xml -->
+</FrameLayout>
+<!-- From: file:/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/layout/list_item_sample.xml -->

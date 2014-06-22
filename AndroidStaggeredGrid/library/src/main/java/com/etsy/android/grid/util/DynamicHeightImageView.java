@@ -1,6 +1,9 @@
 package com.etsy.android.grid.util;
 
 import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Path;
+import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
@@ -18,6 +21,11 @@ public class DynamicHeightImageView extends ImageView {
     public DynamicHeightImageView(Context context) {
         super(context);
     }
+
+    /* add Pinterest Card */
+    public static float radius = 2.0f;
+    Path clipPath = new Path();
+    RectF rect = new RectF(0, 0, this.getWidth(), this.getHeight());
 
     public void setHeightRatio(double ratio) {
         if (ratio != mHeightRatio) {
@@ -41,5 +49,16 @@ public class DynamicHeightImageView extends ImageView {
         else {
             super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         }
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        rect.left = 0;
+        rect.top = 0;
+        rect.right = this.getWidth();
+        rect.bottom = this.getHeight();
+        clipPath.addRoundRect(rect, radius, radius, Path.Direction.CW);
+        canvas.clipPath(clipPath);
+        super.onDraw(canvas);
     }
 }

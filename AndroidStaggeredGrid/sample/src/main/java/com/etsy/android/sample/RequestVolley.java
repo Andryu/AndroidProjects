@@ -15,10 +15,19 @@ import com.android.volley.toolbox.ImageRequest;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.etsy.android.sample.json.Flickr;
+import com.etsy.android.sample.json.FlickrPhoto;
+import com.etsy.android.sample.json.FlickrPhotos;
+
+import net.vvakame.util.jsonpullparser.JsonFormatException;
+import net.vvakame.util.jsonpullparser.JsonPullParser;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by shunsuke_andoh on 2014/06/07.
@@ -44,17 +53,41 @@ public class RequestVolley {
                     public void onResponse(JSONObject jsonObject) {
                         // JSONObjectのパース, ListView, Viewへの追加等
 
-                        if(jsonObject.toString() == "") return;
-                        Log.d(TAG, "Request JSON " + jsonObject.toString());
+                        //try {
+                        try {
+                            if (jsonObject.toString() == "") return;
+                            Log.d(TAG, "Request JSON " + jsonObject.toString());
+                            JsonPullParser parser = JsonPullParser.newParser(jsonObject.toString());
+                            Flickr flickr = FlickrGen.get(parser);
+                            FlickrPhotos photos = flickr.getPhotos();//FlickrGen.getList(parser);
+                            List<FlickrPhoto> photo = photos.getPhoto();
+                            Log.d(TAG, "Json photos " + photo);
+                            for(FlickrPhoto data : photo) {
+                                Log.d("Json Id",data.getId());
+                                Log.d("Json Owner",data.getOwner());
+                                Log.d("Json title",data.getTitle());
+                            }
+                            //Log.d(TAG, "Json Parse " + flickr.getPhotos());
+                        }catch(JsonFormatException e){
+                            e.getStackTrace();
+                            Log.e("Json Format ERROR", e.toString());
+                        }catch(IOException e){
+                            e.getStackTrace();
+                            Log.e("ERROR", "Json Error");
+                        }finally {
+
+                        }
                     }
                 },
-        new Response.ErrorListener() {
-            @Override public void onErrorResponse(VolleyError error) {
-                // エラー処理 error.networkResponseで確認
-                // エラー表示
-                Log.d(TAG, "Request Error " + error.toString());
-            }
-        }));
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // エラー処理 error.networkResponseで確認
+                        // エラー表示
+                        Log.d(TAG, "Request Error " + error.toString());
+                    }
+                }
+        ));
 
     }
 

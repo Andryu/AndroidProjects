@@ -74,6 +74,12 @@ public class StaggeredGridActivity extends Activity implements AbsListView.OnScr
         mQueue = Volley.newRequestQueue(this);
         ImageLoaderAdapter adapter = new ImageLoaderAdapter(this, urlList, mQueue);
         */
+
+        // API
+        // Uri text
+        String url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=17af704bea88cb57230211158865a448&tag=blue&text=sky&format=json&nojsoncallback=1";
+        RequestVolley requestApi = new RequestVolley(this);
+        requestApi.requestJsonObject(url);
     }
 
     @Override

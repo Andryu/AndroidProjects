@@ -8295,6 +8295,11 @@ false
     <dataSet config="main" >
         <source path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res" >
             <file
+                name="background_card"
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/drawable/background_card.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
                 name="list_item_selector"
                 path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/drawable/list_item_selector.xml"
                 qualifiers=""
@@ -8347,6 +8352,11 @@ false
             <file
                 name="list_item_sample"
                 path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/layout/list_item_sample.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="list_item_sample_2"
+                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/layout/list_item_sample_2.xml"
                 qualifiers=""
                 type="layout" />
             <file
@@ -8466,16 +8476,6 @@ false
                 <dimen name="activity_horizontal_margin" >64dp
                 </dimen>
             </file>
-            <file
-                name="background_card"
-                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/drawable/background_card.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="list_item_sample_2"
-                path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/src/main/res/layout/list_item_sample_2.xml"
-                qualifiers=""
-                type="layout" />
         </source>
         <source path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/build/generated/res/rs/debug" />
         <source path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/build/generated/res/generated/debug" />

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merger version="2" >
 
+    <dataSet config="19.1.0" >
+        <source path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/assets" />
+    </dataSet>
     <dataSet config="1.0.3" >
         <source path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/build/intermediates/exploded-aar/com.etsy.android.grid/library/1.0.3/assets" />
     </dataSet>

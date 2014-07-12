@@ -1,0 +1,49 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.11.+'
+        // JsonPullParser
+        classpath 'com.uphyca.gradle:gradle-android-apt-plugin:0.9.+'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+
+version = VERSION_NAME
+group = GROUP
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        minSdkVersion 10
+        targetSdkVersion 19
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile project(':library')
+    compile files('libs/volley.jar')
+    compile 'com.android.support:appcompat-v7:19.+'
+
+    // JsonPullParser
+    apply plugin: 'android-apt'
+    compile 'net.vvakame:jsonpullparser-core:1.6.+'
+    apt 'net.vvakame:jsonpullparser-apt:1.6.+'
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/library/src/main/assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/library/src/debug/assets" />
+    </dataSet>
+
+</merger>

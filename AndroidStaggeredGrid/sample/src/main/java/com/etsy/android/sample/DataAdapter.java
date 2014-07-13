@@ -57,7 +57,11 @@ public class DataAdapter  extends ArrayAdapter<Data>{
         final Data data = datas.get(position);
         holder.image.setHeightRatio(1.0);
         holder.image.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-        Picasso.with(this.activity).load(data.imageUrl).into(holder.image);
+        Picasso.with(this.activity)
+                .load(data.imageUrl)
+                .placeholder(R.drawable.placeholder)
+                .noFade()
+                .into(holder.image);
         holder.title.setText(data.title);
         holder.description.setText(data.description);
         return row;

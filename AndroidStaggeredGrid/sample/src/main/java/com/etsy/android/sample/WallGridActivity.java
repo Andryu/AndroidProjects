@@ -71,8 +71,6 @@ public class WallGridActivity extends Activity implements AbsListView.OnItemClic
         String text = "sky";
         requestVolley = new RequestVolley(this);
         requestVolley.requestJsonObject(BASE_URL + "&api_key=" + api_key + "&tag=" + keyword + "&text=" + text + "&format=json&nojsoncallback=1");
-        //mRequestQueue = Volley.newRequestQueue(this);
-        //requestJsonArray();
     }
 
     @Override

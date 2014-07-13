@@ -2,3 +2,4 @@
 /**/.gradle/
 *.swp
 /**/SecretItems.*
+/**/.idea/workspace.xml

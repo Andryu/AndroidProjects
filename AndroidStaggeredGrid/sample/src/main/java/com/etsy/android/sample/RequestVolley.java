@@ -16,6 +16,7 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.etsy.android.sample.json.Flickr;
+import com.etsy.android.sample.json.FlickrGen;
 import com.etsy.android.sample.json.FlickrPhoto;
 import com.etsy.android.sample.json.FlickrPhotos;
 

@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.etsy.android.grid.util.DynamicHeightImageView;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -15,6 +16,12 @@ import java.util.List;
  * Created by shunsuke_andoh on 2014/06/22.
  */
 public class DataAdapter  extends ArrayAdapter<Data>{
+
+    private static class ViewHolder {
+        DynamicHeightImageView image;
+        TextView title;
+        TextView description;
+    }
 
     Activity activity;
     int resource;
@@ -31,13 +38,13 @@ public class DataAdapter  extends ArrayAdapter<Data>{
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View row = convertView;
-        final DealHolder holder;
+        final ViewHolder holder;
 
         if(row == null) {
             LayoutInflater inflater = activity.getLayoutInflater();
             row = inflater.inflate(resource, parent, false);
 
-            holder = new DealHolder();
+            holder = new ViewHolder();
             holder.image = (DynamicHeightImageView)row.findViewById(R.id.image);
             holder.title = (TextView)row.findViewById(R.id.title);
             holder.description = (TextView)row.findViewById(R.id.description);
@@ -45,42 +52,15 @@ public class DataAdapter  extends ArrayAdapter<Data>{
             row.setTag(holder);
         }
         else{
-            holder = (DealHolder) row.getTag();
+            holder = (ViewHolder) row.getTag();
         }
         final Data data = datas.get(position);
-        //holder.image.setImageResource(R.drawable.ic_launcher);
-        /*
-        // 画像取得処理
-        ImageListener listener = ImageLoader.getImageListener(
-                //ImageView
-                holder.image,
-                //読込中画像
-                android.R.drawable.ic_menu_rotate,
-                //読み込み失敗画像
-                android.R.drawable.ic_delete
-        );
-
-
-        mImageLoader.get(
-                //取得URL
-                url,
-                //リスナー
-                listener,
-                //maxWidth
-                100,
-                //maxHeight
-                100
-        );
-        */
-        //holder.image.setHeightRatio(1.0);
+        holder.image.setHeightRatio(1.0);
+        holder.image.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+        Picasso.with(this.activity).load(data.imageUrl).into(holder.image);
         holder.title.setText(data.title);
         holder.description.setText(data.description);
         return row;
     }
 
-    static class DealHolder {
-        DynamicHeightImageView image;
-        TextView title;
-        TextView description;
-    }
 }

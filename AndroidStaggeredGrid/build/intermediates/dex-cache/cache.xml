@@ -2,17 +2,17 @@
 <pre-dex-items>
 
     <item
+        dex="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/build/intermediates/pre-dexed/debug/picasso-2.3.2-9e39a94c716e30aa6b2b7d7a85ee3627b3d9b84d.jar"
+        jar="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/libs/picasso-2.3.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27"/>
+    <item
         dex="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/build/intermediates/pre-dexed/debug/volley-688d200de7c3b64d7d44e3f6e0dcc71e0c178ea9.jar"
         jar="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/libs/volley.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="6dcde205d2cbd5880309ec14b570d3cee6d5fc27"/>
-    <item
-        dex="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/build/intermediates/pre-dexed/debug/jsonpullparser-core-1.6.2-69ad0f736883eff1bde881092fc0f01098a894fa.jar"
-        jar="/Users/shunsuke_andoh/.gradle/caches/modules-2/files-2.1/net.vvakame/jsonpullparser-core/1.6.2/a140f989b13aa50f44105ab71d5a5036e6902298/jsonpullparser-core-1.6.2.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="a140f989b13aa50f44105ab71d5a5036e6902298"/>
     <item
         dex="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/build/intermediates/pre-dexed/debug/support-v4-19.1.0-9e690ee90ae3f96efefe9fdfc2558bcb7f6de86f.jar"
         jar="/Applications/AndroidDevelopper/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
@@ -20,11 +20,17 @@
         revision="19.1.0"
         sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
     <item
+        dex="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/build/intermediates/pre-dexed/debug/jsonpullparser-core-1.6.2-69ad0f736883eff1bde881092fc0f01098a894fa.jar"
+        jar="/Users/shunsuke_andoh/.gradle/caches/modules-2/files-2.1/net.vvakame/jsonpullparser-core/1.6.2/a140f989b13aa50f44105ab71d5a5036e6902298/jsonpullparser-core-1.6.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="a140f989b13aa50f44105ab71d5a5036e6902298"/>
+    <item
         dex="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/build/intermediates/pre-dexed/debug/classes-f312ef9770d5d714a9123ceea54b9370a327e42f.jar"
         jar="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/build/intermediates/exploded-aar/com.etsy.android.grid/library/1.0.3/classes.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="9cb113933fdc80c4d88d808908fd189dae073a6c"/>
+        sha1="3be0b5c6d8f8e100413641bfde175dd29e3a28fa"/>
     <item
         dex="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/sample/build/intermediates/pre-dexed/debug/classes-3d0c536c062e94e59a85dae54e2d67455a7e0b22.jar"
         jar="/Users/shunsuke_andoh/AndroidProjects/AndroidStaggeredGrid/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"

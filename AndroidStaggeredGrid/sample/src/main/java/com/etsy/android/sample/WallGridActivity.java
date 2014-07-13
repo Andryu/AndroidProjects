@@ -58,7 +58,7 @@ public class WallGridActivity extends Activity implements AbsListView.OnItemClic
         setTitle("Pinterest Layout Demo");
         mGridView = (StaggeredGridView) findViewById(R.id.grid_view);
 
-        mAdapter = new DataAdapter(this, R.layout.list_item_sample, generateSampleData());
+        mAdapter = new DataAdapter(this, R.layout.list_item_sample_2, generateSampleData());
         mGridView.setAdapter(mAdapter);
         mGridView.setOnItemClickListener(this);
     }

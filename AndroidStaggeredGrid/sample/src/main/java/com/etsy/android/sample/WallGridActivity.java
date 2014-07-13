@@ -13,6 +13,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.ImageLoader.ImageCache;
 import com.etsy.android.grid.StaggeredGridView;
+import com.etsy.android.sample.common.SecretItems;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -65,7 +66,7 @@ public class WallGridActivity extends Activity implements AbsListView.OnItemClic
     public void init() {
         // RequestQueue
         String BASE_URL = "https://api.flickr.com/services/rest/?method=flickr.photos.search";
-        String api_key = "17af704bea88cb57230211158865a448";
+        String api_key = SecretItems.API_FLICKR; // API Key
         String keyword = "blue";
         String text = "sky";
         requestVolley = new RequestVolley(this);
